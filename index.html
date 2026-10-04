@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trần Bảo Châu | Portfolio 🎀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sparkle-bg" aria-hidden="true"></div>
+  <div id="bg-kitties" aria-hidden="true"></div>
+  <button id="kitty-toggle" class="kitty-toggle" aria-pressed="true" title="Bật / tắt Hello Kitty">🎀 Kitties</button>
+  <div id="floaters" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="#home" class="logo">Trần Bảo Châu</a>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact" class="pill">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <header id="home" class="hero">
+    <div class="hero-art" id="kitty" title="Bấm vào mình nè!">
+      <div class="bubble" id="bubble">Meo~ 💕</div>
+      <div class="blob">
+        <!-- Mascot mèo trắng nơ hồng hiển thị khi chưa có ảnh -->
+        <svg viewBox="0 0 200 180" class="kitty-svg" role="img" aria-label="Mascot mèo trắng đeo nơ">
+          <path d="M32 72 L26 22 Q26 12 36 18 L80 46 Z" fill="#fff" stroke="#3b2a33" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M168 72 L174 22 Q174 12 164 18 L120 46 Z" fill="#fff" stroke="#3b2a33" stroke-width="3" stroke-linejoin="round"/>
+          <ellipse cx="100" cy="104" rx="80" ry="62" fill="#fff" stroke="#3b2a33" stroke-width="3"/>
+          <ellipse class="eye" cx="64" cy="100" rx="7" ry="9" fill="#3b2a33"/>
+          <ellipse class="eye" cx="136" cy="100" rx="7" ry="9" fill="#3b2a33"/>
+          <ellipse cx="100" cy="115" rx="9" ry="6.5" fill="#ffc83d" stroke="#3b2a33" stroke-width="2.5"/>
+          <g stroke="#3b2a33" stroke-width="3" stroke-linecap="round">
+            <line x1="8" y1="96" x2="42" y2="102"/><line x1="6" y1="116" x2="42" y2="114"/><line x1="10" y1="136" x2="44" y2="126"/>
+            <line x1="192" y1="96" x2="158" y2="102"/><line x1="194" y1="116" x2="158" y2="114"/><line x1="190" y1="136" x2="156" y2="126"/>
+          </g>
+          <ellipse cx="44" cy="124" rx="9" ry="5" fill="#ffb3cf" opacity=".6"/>
+          <ellipse cx="156" cy="124" rx="9" ry="5" fill="#ffb3cf" opacity=".6"/>
+          <g class="bow" transform="translate(150 40)">
+            <path d="M0 0 L-30 -18 Q-40 0 -30 18 Z" fill="#ff4f8b" stroke="#3b2a33" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M0 0 L30 -18 Q40 0 30 18 Z" fill="#ff4f8b" stroke="#3b2a33" stroke-width="3" stroke-linejoin="round"/>
+            <circle r="8" fill="#ff77a8" stroke="#3b2a33" stroke-width="3"/>
+          </g>
+        </svg>
+        <!-- Đặt ảnh của bạn tên avatar.jpg cùng thư mục: ảnh sẽ tự thay mascot -->
+        <img src="avatar.jpg" alt="Trần Bảo Châu" class="avatar" onerror="this.remove()" />
+      </div>
+      <span class="deco-bow" aria-hidden="true">🎀</span>
+    </div>
+
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="hl">Trần Bảo Châu</span></h1>
+      <h2>I'm a <span class="hl" id="typing"></span><span class="cursor">|</span></h2>
+      <p>
+        Sinh viên Kinh doanh Quốc tế tại Trường Đại học Ngoại thương, năng động, sáng tạo, ham học hỏi và có tinh thần nghiên cứu.
+        Mình mong muốn không ngừng phát triển năng lực nghiên cứu và tư duy học thuật,
+        hướng tới đạt giải cấp Bộ và công bố bài báo trên các tạp chí khoa học quốc tế.
+      </p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">View Projects ✨</a>
+        <a href="#contact" class="btn ghost">Contact Me 💌</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <h2 class="title">About Me 🌸</h2>
+    <div class="card about-card">
+      <p>
+        Là sinh viên Kinh doanh Quốc tế tại Trường Đại học Ngoại thương, mình là người năng động, sáng tạo,
+        ham học hỏi và có tinh thần nghiên cứu. Mình mong muốn không ngừng phát triển năng lực nghiên cứu và tư duy học thuật:
+        trong ngắn hạn, tham gia và đạt giải tại cuộc thi Nghiên cứu khoa học cấp Trường;
+        trong dài hạn, hướng tới đạt giải cấp Bộ và công bố bài báo trên các tạp chí khoa học quốc tế.
+      </p>
+      <ul class="facts">
+        <li>📍 <b>Địa điểm:</b> Hà Nội, Việt Nam</li>
+        <li>🎓 <b>Học vấn:</b> Kinh doanh Quốc tế – ĐH Ngoại thương (2024 – 2028)</li>
+        <li>📊 <b>GPA:</b> 3.64/4.0</li>
+        <li>🗣️ <b>Tiếng Anh:</b> IELTS 8.0</li>
+      </ul>
+    </div>
+
+    <h3 class="sub">Kỹ năng &amp; Ngoại ngữ ⭐</h3>
+    <div class="tags center">
+      <span>Truyền thông &amp; nội dung</span>
+      <span>Lập kế hoạch</span>
+      <span>Điều phối nhân sự</span>
+      <span>Thiết kế ấn phẩm</span>
+      <span>Tư duy nghiên cứu</span>
+      <span>Làm việc nhóm</span>
+    </div>
+    <div class="skills">
+      <!-- Điểm IELTS quy ra % trên thang 9.0 -->
+      <div class="skill"><span>IELTS Listening: 8.5</span><div class="bar"><i data-level="94"></i></div></div>
+      <div class="skill"><span>IELTS Reading: 8.5</span><div class="bar"><i data-level="94"></i></div></div>
+      <div class="skill"><span>IELTS Speaking: 7.5</span><div class="bar"><i data-level="83"></i></div></div>
+      <div class="skill"><span>IELTS Writing: 7.0</span><div class="bar"><i data-level="78"></i></div></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCES -->
+  <section id="experiences" class="section reveal">
+    <h2 class="title">Experiences 🍰</h2>
+    <div class="timeline">
+      <div class="item">
+        <span class="year">2025 – 2026</span>
+        <h3>CLB Tình nguyện Đồng hương Nghệ An – ĐH Ngoại thương</h3>
+        <p class="role">Phó Ban Truyền thông</p>
+        <ul>
+          <li>Hỗ trợ xây dựng kế hoạch, điều phối nhân sự và triển khai các hoạt động truyền thông cho chương trình, dự án cộng đồng.</li>
+          <li>Quản lý kênh truyền thông, kiểm soát nội dung và phối hợp với các ban để đảm bảo thông tin được truyền tải chính xác, kịp thời.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <span class="year">2025</span>
+        <h3>Chiến dịch Mùa hè Xanh 2025 – xã Tam Hợp</h3>
+        <p class="role">Leader Truyền thông</p>
+        <ul>
+          <li>Lên kế hoạch và triển khai 10+ nội dung truyền thông, thiết kế ấn phẩm cho chương trình; góp phần cập nhật và lan tỏa các hoạt động trên fanpage.</li>
+          <li>Xây dựng và duy trì lịch đăng bài, cập nhật 20+ hoạt động trong suốt chương trình, đảm bảo nội dung được đăng tải đầy đủ và đúng thời điểm.</li>
+          <li>Theo dõi các chỉ số reach, engagement và share của 20+ bài đăng, hỗ trợ tối ưu nội dung; các bài viết đạt 1.000+ lượt tiếp cận.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <span class="year">2024 – nay</span>
+        <h3>Bí thư Chi đoàn</h3>
+        <ul>
+          <li>Là cầu nối giữa giảng viên và sinh viên trong các hoạt động học tập.</li>
+          <li>Truyền đạt thông tin học tập, lịch học và các thông báo quan trọng.</li>
+          <li>Hỗ trợ giải quyết các vấn đề phát sinh trong lớp.</li>
+          <li>Rèn luyện kỹ năng tổ chức, điều phối và làm việc với nhiều bên liên quan.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <span class="year">2024 – 2028</span>
+        <h3>Trường Đại học Ngoại thương</h3>
+        <p class="role">Chuyên ngành Kinh doanh Quốc tế</p>
+        <ul><li>GPA: 3.64/4.0</li></ul>
+      </div>
+      <div class="item">
+        <span class="year">2021 – 2024</span>
+        <h3>THPT Chuyên Phan Bội Châu, tỉnh Nghệ An</h3>
+        <p class="role">Lớp chuyên Toán 2</p>
+        <ul><li>Điểm trung bình: 9.6/10</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <h2 class="title">Projects 🎀</h2>
+    <div class="grid">
+      <article class="card project tilt">
+        <div class="emoji">🌿</div>
+        <h3>Chiến dịch Mùa hè Xanh 2025</h3>
+        <p>Leader Truyền thông tại xã Tam Hợp: lên kế hoạch 10+ nội dung, cập nhật 20+ hoạt động, bài viết đạt 1.000+ lượt tiếp cận.</p>
+        <div class="tags"><span>Truyền thông</span><span>Fanpage</span><span>Ấn phẩm</span></div>
+      </article>
+      <article class="card project tilt">
+        <div class="emoji">📣</div>
+        <h3>Truyền thông CLB Đồng hương Nghệ An</h3>
+        <p>Xây dựng kế hoạch, điều phối nhân sự và quản lý kênh truyền thông cho các chương trình, dự án cộng đồng.</p>
+        <div class="tags"><span>Quản lý nội dung</span><span>Điều phối</span></div>
+      </article>
+      
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies" class="section reveal">
+    <h2 class="title">Hobbies 🍓</h2>
+    <div class="hobbies">
+      <!-- TODO: sửa sở thích (CV chưa có mục này) -->
+      <div class="hobby"><span>🎧</span>Nghe nhạc</div>
+      <div class="hobby"><span>📷</span>Chụp ảnh</div>
+      <div class="hobby"><span>✈️</span>Du lịch</div>
+      <div class="hobby"><span>☕</span>Cà phê</div>
+      <div class="hobby"><span>📚</span>Đọc sách</div>
+      <div class="hobby"><span>🌷</span>Hoa &amp; thiên nhiên</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <h2 class="title">Contact 💌</h2>
+    <div class="card contact">
+      <p>Mình luôn sẵn sàng kết nối và trao đổi về nghiên cứu khoa học, truyền thông và các hoạt động cộng đồng nhé!</p>
+      <div class="links">
+        <a href="mailto:k63.2411510016@ftu.edu.vn" class="btn primary">✉️ k63.2411510016@ftu.edu.vn</a>
+        <a href="tel:+84965635967" class="btn ghost">📞 0965 635 967</a>
+        <span class="btn ghost">📍 Hà Nội, Việt Nam</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>Made with 💖 by Trần Bảo Châu · <span id="year"></span></footer>
+
+  <!-- MUSIC PLAYER -->
+
+
+  <script src="script.js"></script>
+</body>
+</html>
